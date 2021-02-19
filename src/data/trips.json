@@ -1,0 +1,23 @@
+[
+  {
+    "img": "../assets/images/travel1.jpg",
+    "alt": "Great Pyramids, Egypt",
+    "name": "Great Pyramids, Egypt",
+    "button": "View Destination"
+  },
+    "img": "../assets/images/travel2.jpg",
+    "alt": "Greek Beach",
+    "name": "Greek Beach",
+    "button": "View Destination"
+  },
+    "img": "../assets/images/travel3.jpg",
+    "alt": "Mount Fuji, Japan",
+    "name": "Mount Fuji, Japan",
+    "button": "View Destination"
+  },
+    "img": "../assets/images/travel4.jpg",
+    "alt": "New York City",
+    "name": "New York City",
+    "button": "View Destination"
+  }
+]
