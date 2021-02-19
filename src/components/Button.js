@@ -15,7 +15,7 @@ export const Button = styled(Link)`
   transition: 0.3s !important;
   border-radius: ${({ round }) => (round ? '50px' : 'none')};
 
-  &:hover {
+  &:hover {x
     background: ${({ primary }) => (primary ? '#077bf1' : '#f26a2e')};
     transform: translateY(-2px);
   }
