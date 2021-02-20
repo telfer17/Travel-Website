@@ -16,7 +16,7 @@ const Trips = ({ heading }) => {
             name
             img {
               childImageSharp {
-                fluid {
+                fluid(quality: 90) {
                   ...GatsbyImageSharpFluid
                 }
               }
