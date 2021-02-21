@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 import { FaRegLightbulb } from 'react-icons/fa'
 import { useStaticQuery, graphql } from 'gatsby'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Testimonials = () => {
+  useEffect(() => {
+    Aos.init({})
+  }, [])
+
   const data = useStaticQuery(graphql`
     query {
       allFile(
@@ -29,11 +35,27 @@ const Testimonials = () => {
 
   return (
     <TestimonialsContainer>
-      <TopLine>Testimonials</TopLine>
-      <Description>What people are saying...</Description>
+      <TopLine
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        Testimonials
+      </TopLine>
+      <Description
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        What people are saying...
+      </Description>
       <ContentWrapper>
         <ColumnOne>
-          <Testimonial>
+          <Testimonial
+            data-aos="fade-right"
+            data-aos-delay="150"
+            data-aos-duration="1200"
+          >
             <IoMdCheckmarkCircleOutline
               css={`
                 color: #3fffa8;
@@ -44,7 +66,11 @@ const Testimonials = () => {
             <h3>Amanda Craig</h3>
             <p>"Experience of a lifetime!!</p>
           </Testimonial>
-          <Testimonial>
+          <Testimonial
+            data-aos="fade-right"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
             <FaRegLightbulb
               css={`
                 color: #f9b19b;
@@ -59,7 +85,11 @@ const Testimonials = () => {
             </p>
           </Testimonial>
         </ColumnOne>
-        <ColumnTwo>
+        <ColumnTwo
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
           {data.allFile.edges.map((image, key) => (
             <Images key={key} fluid={image.node.childImageSharp.fluid} />
           ))}

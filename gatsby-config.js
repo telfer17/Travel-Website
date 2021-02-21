@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Travel Website`,
+    title: `Trexplore - Travel Website`,
     description: `Travel website showcasing the best travel destinations and deals`,
     author: `@gatsbyjs`
   },
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+        icon: `src/assets/images/gatsby-icon.png` // This path is relative to the root of the site.
       }
     },
     `gatsby-transformer-json`,
