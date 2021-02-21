@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 
 const Footer = () => {
   return (
@@ -87,7 +87,7 @@ const FooterLink = styled.h2`
     color: #000;
   }
 
-  a: hover {
+  a:hover {
     color: #f26a2e;
     transition: 0.3s ease-out;
   }
@@ -98,7 +98,7 @@ const FooterLink = styled.h2`
   }
 `
 
-const FooterLinkTitle = styled(Link)`
+const FooterLinkTitle = styled.h2`
   text-decoration: none;
   margin-bottom: 1rem;
   font-size: 14px;
