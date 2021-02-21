@@ -54,7 +54,7 @@ const Trips = ({ heading }) => {
               <ProductTitle>{item.node.name}</ProductTitle>
             </TextWrap>
             <Button
-              to="/trips"
+              to={`https://www.google.com/search?q=${item.node.name}`}
               primary="true"
               round="true"
               css={`
