@@ -62,7 +62,7 @@ const EmailContainer = styled.div`
     align-items: center;
 `
 
-const EmailContent = styled.p`
+const EmailContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
