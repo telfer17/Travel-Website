@@ -5,10 +5,10 @@ import { Button } from './Button'
 import { FaTimes } from 'react-icons/fa'
 import { menuData } from '../data/MenuData'
 
-const Dropdown = () => {
+const Dropdown = ({ isOpen, toggle }) => {
   return (
-    <DropdownContainer>
-      <Icon>
+    <DropdownContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <DropdownWrapper>
