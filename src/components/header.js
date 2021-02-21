@@ -1,13 +1,21 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 import { menuData } from '../data/MenuData'
 import { Button } from './Button'
 
 const Header = ({ toggle }) => {
+  const [navbar, setNavBar] = useState(false)
+
+  useEffect(() => {
+    if (window.location.pathname) {
+      setNavBar(window.location.pathname)
+    }
+  }, [])
+
   return (
-    <Nav>
+    <Nav navbar={navbar}>
       <NavLink to="/">Trexplore</NavLink>
       <Bars onClick={toggle} />
       <NavMenu>
@@ -29,7 +37,7 @@ const Header = ({ toggle }) => {
 export default Header
 
 const Nav = styled.nav`
-  background: transparent;
+  background: ${({ navbar }) => (navbar !== '/' ? '#141414' : 'transparent')};
   height: 80px;
   display: flex;
   justify-content: space-between;

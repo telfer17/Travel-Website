@@ -86,7 +86,7 @@ const ProductsHeading = styled.div`
 
 const ProductsWrapper = styled.div`
   display: grid;
-  grid=template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grip-gap: 10px;
   justify-items: center;
   padding: 0 2rem;
@@ -107,6 +107,7 @@ const ProductCard = styled.div`
   position: relative;
   border-radius: 10px;
   transition: 0.2s ease;
+  padding-right: 10px;
 `
 
 const ProductImg = styled(Img)`
