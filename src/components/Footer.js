@@ -12,25 +12,22 @@ const Footer = () => {
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Contact Us</FooterLinkTitle>
-          <FooterLink to="about">Contact</FooterLink>
-          <FooterLink to="/">Support</FooterLink>
-          <FooterLink to="/">Destinations</FooterLink>
-          <FooterLink to="/">Sponsorships</FooterLink>
+          <FooterLink>
+            <a href="mailto: dtelfer17@gmail.com">Email</a>
+          </FooterLink>
+          <FooterLink>
+            <a href="mailto: dtelfer17@gmail.com">Support</a>
+          </FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
       <FooterLinksWrapper>
         <FooterLinkItems>
-          <FooterLinkTitle>Videos</FooterLinkTitle>
-          <FooterLink to="/">Submit Videos</FooterLink>
-          <FooterLink to="/">Ambassadors</FooterLink>
-          <FooterLink to="/">Agency</FooterLink>
-          <FooterLink to="/">Influencers</FooterLink>
-        </FooterLinkItems>
-        <FooterLinkItems>
           <FooterLinkTitle>Social Media</FooterLinkTitle>
-          <FooterLink to="https://github.com/telfer17/">GitHub</FooterLink>
-          <FooterLink to="https://www.linkedin.com/in/davidtelfer-/">
-            LinkedIn
+          <FooterLink>
+            <a href="https://github.com/telfer17/">GitHub</a>
+          </FooterLink>
+          <FooterLink>
+            <a href="https://www.linkedin.com/in/davidtelfer-/">LinkedIn</a>
           </FooterLink>
         </FooterLinkItems>
       </FooterLinksWrapper>
@@ -85,6 +82,16 @@ const FooterLink = styled.h2`
   margin-bottom: 16px;
   cursor: pointer;
 
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a: hover {
+    color: #f26a2e;
+    transition: 0.3s ease-out;
+  }
+
   &:hover {
     color: #f26a2e;
     transition: 0.3s ease-out;
@@ -93,7 +100,7 @@ const FooterLink = styled.h2`
 
 const FooterLinkTitle = styled(Link)`
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 14px;
-  color: #3d3d4e;
+  color: #f26a2e;
 `

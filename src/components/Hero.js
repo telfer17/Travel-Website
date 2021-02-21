@@ -32,7 +32,7 @@ const HeroContainer = styled.div`
   height: 100vh;
   padding: 0 1rem;
   position: relative;
-  margin-top: --80px;
+  margin-top: -80px;
   color: #fff;
 
   :before {
@@ -72,7 +72,7 @@ const VideoBg = styled.video`
 const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
-  max-height: 100;
+  max-height: 100%;
   padding: 0rem calc((100vw - 1300px) / 2);
 `
 
@@ -88,18 +88,16 @@ const HeroItems = styled.div`
   color: #fff;
   line-height: 1.1;
   font-weight: bold;
-  font-weight: bold;
 `
 
-const HeroH1 = styled.div`
+const HeroH1 = styled.h1`
   font-size: clamp(1.5rem, 6vw, 4rem);
   margin-bottom: 1.5rem;
   letter-spacing: 3px;
-  font-weight: bold;
   padding: 0 1rem;
 `
 
-const HeroP = styled.div`
+const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 400;

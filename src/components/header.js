@@ -30,7 +30,7 @@ export default Header
 
 const Nav = styled.nav`
   background: transparent;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
@@ -46,6 +46,7 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: 1.6rem;
 `
 
 const Bars = styled(FaBars)`

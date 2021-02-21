@@ -79,8 +79,8 @@ const TestimonialsContainer = styled.div`
   height: 100%;
 `
 const TopLine = styled.p`
-  color: #077bf1;
-  font-size: 1rem;
+  color: #f26a2e;
+  font-size: 1.5rem;
   padding-left: 2rem;
   margin-bottom: 0.75rem;
 `
@@ -112,7 +112,6 @@ const Testimonial = styled.div`
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-style: italic;
-    color: red;
   }
 
   p {

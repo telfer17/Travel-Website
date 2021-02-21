@@ -1,14 +1,14 @@
 [
   {
     "img": "../assets/images/travel1.jpg",
-    "alt": "Great Pyramids, Egypt",
-    "name": "Great Pyramids, Egypt",
+    "alt": "Great Sphinx of Giza, Egypt",
+    "name": "Great Sphinx of Giza, Egypt",
     "button": "View Destination"
   },
   {
     "img": "../assets/images/travel2.jpg",
-    "alt": "Greek Beach",
-    "name": "Greek Beach",
+    "alt": "Zakynthos Beach, Greece",
+    "name": "Zakynthos Beach, Greece",
     "button": "View Destination"
   },
   {
@@ -19,8 +19,8 @@
   },
   {
     "img": "../assets/images/travel4.jpg",
-    "alt": "New York City",
-    "name": "New York City",
+    "alt": "New York City, USA",
+    "name": "New York City, USA",
     "button": "View Destination"
   }
 ]
